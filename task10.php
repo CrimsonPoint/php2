@@ -19,9 +19,10 @@
         $year = $_POST["year"];
 
         foreach (count_chars($year, 1) as $i => $t) {
-        echo  chr($i)."-".$t;
-        echo(" ");
+            echo  chr($i)."-".round($t / count(str_split($year)),2)."%";
+            echo(" ");
         }
+    
 
     ?>
     
